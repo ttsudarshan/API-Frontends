@@ -1,0 +1,96 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #0f1f3d;
+    /* Dark blue navbar background */
+    color: #fff;
+    /* White text */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    /* White background for container */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark-mode-toggle {
+    position: relative;
+}
+
+.dark-mode-toggle input {
+    display: none;
+}
+
+.dark-mode-toggle label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #ddd;
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dark-mode-toggle label:after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px; /* Adjusted top position */
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle input:checked + label {
+    background-color: #0f1f3d;
+}
+
+.dark-mode-toggle input:checked + label:after {
+    transform: translateX(20px);
+}
